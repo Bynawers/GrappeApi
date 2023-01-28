@@ -1,20 +1,20 @@
 {
-  "dependencies": {
-    "express": "^4.18.2",
-    "mongoose": "^6.8.3",
-    "nedb": "^1.8.0"
-  },
-  "scripts": {
-    "start": "node server.js",
-    "watch": "nodemon server.js"
-  },
-  "name": "server-grappe",
-  "version": "1.0.0",
-  "main": "index.js",
-  "author": "Bynawers",
-  "license": "ISC",
-  "description": "",
-  "devDependencies": {
-    "nodemon": "^2.0.20"
-  }
+    "dependencies": {
+      "express": "^4.18.2",
+      "mongoose": "^6.8.3",
+      "nedb": "^1.8.0"
+    },
+    "scripts": {
+      "start": "node server.js",
+      "watch": "nodemon server.js"
+    },
+    "name": "server-grappe",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "Bynawers",
+    "license": "ISC",
+    "description": "",
+    "devDependencies": {
+      "nodemon": "^2.0.20"
+    }
 }
