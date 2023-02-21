@@ -1,0 +1,63 @@
+POST http://localhost:8000/api/wine  HTTP/1.1
+content-type: application/json
+
+{
+    "vivino_id": 0,
+    "name": "La Tâche Grand Cru",
+    "country": "France",
+    "region": "La Tâche Grand Cru",
+    "winery": "Domaine de La Romanée-Conti",
+    "volume": 750,
+    "year": 2012,
+    "count": 0,
+    "rate": 0,
+    "type": "Rouge"
+}
+
+###
+
+GET http://localhost:800/api/wine  HTTP/1.1
+
+###
+
+GET http://localhost:8000/api/wine/63c30bb1ac53fee9be67e36f  HTTP/1.1
+
+###
+
+PATCH http://localhost:8000/api/wine/63c30bb1ac53fee9be67e36f  HTTP/1.1
+content-type: application/json
+
+{
+    "id": 0,
+    "name": "La Tâche Grand Cru",
+    "country": "France",
+    "region": "La Tâche Grand Cru",
+    "winery": "Domaine de La Romanée-Conti",
+    "volume": 750,
+    "year": 2012,
+    "count": 0,
+    "rate": 0,
+    "type": "Rouge"
+}
+
+###
+
+PUT http://localhost:8000/api/wine/63c30bb1ac53fee9be67e36f  HTTP/1.1
+content-type: application/json
+
+{
+    "vivino_id": 0,
+    "name": "La Tâche Grand Cru",
+    "country": "France",
+    "region": "La Tâche Grand Cru",
+    "winery": "Domaine de La Romanée-Conti",
+    "volume": 750,
+    "year": 2012,
+    "count": 0,
+    "rate": 0,
+    "type": "Rouge"
+}
+
+###
+
+DELETE http://localhost:8000/api/wine/63c30bb1ac53fee9be67e36f  HTTP/1.1

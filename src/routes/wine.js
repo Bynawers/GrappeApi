@@ -1,15 +1,20 @@
 const express = require('express');
 const router = express.Router();
 
+const auth = require('../middleware/auth');
+const multer = require('../middleware/multer-config');
+
+router.use(express.json())
+
 const WineController = require("../controllers/wine.js")
 
-router.get('/', WineController.getAllWines)
-router.get('/:id', WineController.getWine)
+router.get('/', auth, WineController.getAllWines)
+router.get('/:id', auth, WineController.getWine)
 
-router.post('/', WineController.createWine)
+router.post('/', auth, multer, WineController.createWine)
 
-router.put('/:id', WineController.updateWine)
+router.put('/:id', auth, multer, WineController.updateWine)
 
-router.delete('/:id', WineController.deleteWine);
+router.delete('/:id', auth, WineController.deleteWine)
 
-module.exports = router;
+module.exports = router
